@@ -54,7 +54,7 @@ function upload() {
             <h1 className='mx-6 text-xl mt-6'>Thumbnail URL</h1>
             <input required className='mx-6 rounded-md glassmorph my-2 w-11/12 h-12 p-4 text-gray-300 outline-none' onChange={event => setThumbnail(event.target.value)} />
 
-            <h1 className='mx-6 text-xl mt-6'>Song URL <span className='text-blue-600 cursor-pointer'>(mp3)</span></h1>
+            <h1 className='mx-6 text-xl mt-6'>Song URL <span className='text-blue-600 cursor-pointer'><Link href="https://mailboxdrive.com/upload/">(Kindly Use This to upload music.)</Link></span></h1>
             <input required className='mx-6 rounded-md glassmorph my-2 w-11/12 h-12 p-4 text-gray-300 outline-none' onChange={event => setSong(event.target.value)} />
 
             <h1 className='mx-6 text-xl mt-6'>Authors</h1>

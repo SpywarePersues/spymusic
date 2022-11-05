@@ -1,5 +1,5 @@
 import react, { useEffect, useEffect as UseEffect, useState as UseState } from "react";
-import { app, database } from "../firebaseConfig";
+import { app, db } from "../firebaseConfig";
 import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from 'firebase/auth'
 import { useRouter as UseRouter } from "next/router";
 import ContainerBlock from '../components/ContainerBlock'

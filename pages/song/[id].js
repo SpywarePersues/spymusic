@@ -6,6 +6,8 @@ import { db } from '../../firebaseConfig'
 import { collection, getDocs, doc, getDoc } from 'firebase/firestore'
 import Link from 'next/link'
 import ReactAudioPlayer from 'react-audio-player'
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 function productsScreen() {
     const router = UseRouter()
@@ -21,13 +23,13 @@ function productsScreen() {
 
     const htmlJSX = (
         <div>
-            <div className='glassmorph mx-10 my-4 p-6 w-9/12 rounded-lg'>
+            <div className='glassmorph my-4 p-6 w-9/12 rounded-lg mx-auto'>
                 <img src={currentData.thumbnail} className="md:w-9/12 mx-auto rounded-lg mt-6" />
-                <div className='mx-auto block w-7/12 rounded-lg my-4 '>
-                <audio  src={currentData.song} controls className='w-full bg-transparent my-4 mb-6 opacity-90 rounded-lg'></audio>
+                <div className='mx-auto block rounded-lg my-4'>
+                <AudioPlayer src={currentData.song} controls className='my-4 mb-6 opacity-60 rounded-lg'>Your Browser Does not support me 😰</AudioPlayer>
                 </div>
             </div>
-            <div className='glassmorph w-9/12 rounded-lg my-4 py-6 mx-10 px-6'>
+            <div className='glassmorph w-9/12 rounded-lg my-10 py-6 mx-auto px-6'>
             <h1 className=' mb-6 text-3xl md:text-5xl'>{currentData.name}</h1>
             <h1 className='mb-4 text-xl w-10/12 mt-6 text-gray-300'>{currentData.category}</h1>
             <h1 className='text-3xl w-10/12 mb-6 text-gray-100'>{currentData.authors}</h1>
