@@ -64,3 +64,8 @@ a {
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
 }
+
+audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-panel {
+    background-color: rgb(51, 49, 49);
+    }
