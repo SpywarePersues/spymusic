@@ -5,7 +5,8 @@ import { useRouter as UseRouter } from 'next/router'
 import { db } from '../../firebaseConfig'
 import { collection, getDocs, doc, getDoc } from 'firebase/firestore'
 import Link from 'next/link'
-import ReactAudioPlayer from 'react-audio-player'
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 function productsScreen() {
     const router = UseRouter()
@@ -24,7 +25,7 @@ function productsScreen() {
             <div className='glassmorph mx-10 my-4 p-6 w-9/12 rounded-lg'>
                 <img src={currentData.thumbnail} className="md:w-9/12 mx-auto rounded-lg mt-6" />
                 <div className='mx-auto block w-7/12 rounded-lg '>
-                <audio src={currentData.song} controls className='w-full bg-transparent my-4 mb-6 opacity-90 border-gray-800 border-[3px] rounded-full'></audio>
+                <AudioPlayer  src={currentData.song} controls className='w-full bg-transparent my-4 mb-6 opacity-90 rounded-lg'></AudioPlayer>
                 </div>
             </div>
             <div className='glassmorph w-9/12 rounded-lg my-4 py-6 mx-10 px-6'>

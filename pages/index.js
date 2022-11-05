@@ -6,7 +6,7 @@ import ContainerBlock from '../components/ContainerBlock'
 export default function Home() {
   const databaseRef = collection(db, 'Songs')
     const [firedata, setFiredata] = UseState([])
-
+    
     UseEffect(() => {
         getData()
     }, [])
