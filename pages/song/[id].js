@@ -26,7 +26,7 @@ function productsScreen() {
             <div className='glassmorph my-4 p-6 w-9/12 rounded-lg mx-auto'>
                 <img src={currentData.thumbnail} className="md:w-9/12 mx-auto rounded-lg mt-6" />
                 <div className='mx-auto block rounded-lg my-4'>
-                <AudioPlayer src={currentData.song} controls className='my-4 mb-6 opacity-60 rounded-lg'>Your Browser Does not support me 😰</AudioPlayer>
+                <audio src={currentData.song} controls className='my-4 mb-6 opacity-60 rounded-lg'>Your Browser Does not support me 😰</audio>
                 </div>
             </div>
             <div className='glassmorph w-9/12 rounded-lg my-10 py-6 mx-auto px-6'>
