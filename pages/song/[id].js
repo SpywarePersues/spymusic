@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect as UseEffect, useState as UseState } from 'react'
 import ContainerBlock from '../../components/ContainerBlock'
@@ -6,6 +5,9 @@ import { useRouter as UseRouter } from 'next/router'
 import { db } from '../../firebaseConfig'
 import { collection, getDocs, doc, getDoc } from 'firebase/firestore'
 import Link from 'next/link'
+import ReactAudioPlayer from 'react-audio-player'
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 function productsScreen() {
     const router = UseRouter()
@@ -24,7 +26,7 @@ function productsScreen() {
             <div className='glassmorph my-4 p-6 w-9/12 rounded-lg mx-auto'>
                 <img src={currentData.thumbnail} className="md:w-9/12 mx-auto rounded-lg mt-6" />
                 <div className='mx-auto block rounded-lg my-4'>
-                <audio src={currentData.song} controls className='my-4 mb-6 opacity-60 rounded-lg'>Your Browser Does not support me 😰</audio>
+                <AudioPlayer src={currentData.song} controls className='my-4 mb-6 opacity-60 rounded-lg'>Your Browser Does not support me 😰</AudioPlayer>
                 </div>
             </div>
             <div className='glassmorph w-9/12 rounded-lg my-10 py-6 mx-auto px-6'>
