@@ -5,9 +5,6 @@ import { useRouter as UseRouter } from 'next/router'
 import { db } from '../../firebaseConfig'
 import { collection, getDocs, doc, getDoc } from 'firebase/firestore'
 import Link from 'next/link'
-import ReactAudioPlayer from 'react-audio-player'
-import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
 
 function productsScreen() {
     const router = UseRouter()
