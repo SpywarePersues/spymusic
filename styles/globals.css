@@ -64,7 +64,3 @@ a {
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
 }
-
-    audio::-webkit-media-controls-panel {
-    background-color: rgb(172, 165, 165);
-    }
