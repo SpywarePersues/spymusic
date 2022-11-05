@@ -8,7 +8,7 @@ export default function Navbar(){
                 <Link href={{pathname: '/authors'}}><li className="hover:text-gray-100 hover:bg-gray-500 px-4 py-[0.35rem] rounded-md transition-all duration-300 cursor-pointer">Authors</li></Link>
                 <Link href={{pathname: '/categories'}}><li className="hover:text-gray-100 hover:bg-gray-500 px-4 py-[0.35rem] rounded-md transition-all duration-300 cursor-pointer">Categories</li></Link>
                 <Link href={{pathname: '/upload'}}><li className="hover:text-gray-100 hover:bg-gray-500 px-4 py-[0.35rem] rounded-md transition-all duration-300 cursor-pointer">Upload</li></Link>
-                <Link href={{pathname: '/faq'}}><li className="hover:text-gray-100 hover:bg-gray-500 px-4 py-[0.35rem] rounded-md transition-all duration-300 cursor-pointer">FAQ</li></Link>
+                <Link href={{pathname: '/login'}}><li className="hover:text-gray-100 hover:bg-gray-500 px-4 py-[0.35rem] rounded-md transition-all duration-300 cursor-pointer">Login</li></Link>
             </ul>
         </div>
     )
