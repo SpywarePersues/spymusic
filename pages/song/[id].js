@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect as UseEffect, useState as UseState } from 'react'
 import ContainerBlock from '../../components/ContainerBlock'
