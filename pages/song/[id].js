@@ -24,7 +24,7 @@ function productsScreen() {
             <div className='glassmorph mx-10 my-4 p-6 w-9/12 rounded-lg'>
                 <img src={currentData.thumbnail} className="md:w-9/12 mx-auto rounded-lg mt-6" />
                 <div className='mx-auto block w-7/12 rounded-lg my-4 '>
-                <ReactAudioPlayer  src="https://cdn.discordapp.com/attachments/910730837996224584/1038304622026170418/y2mate.com_-_Excuses_AP_Dhillon_Gurinder_Gill_Intense.mp3" controls className='w-full bg-transparent my-4 mb-6 opacity-90 rounded-lg'></ReactAudioPlayer>
+                <audio  src="https://cdn.discordapp.com/attachments/910730837996224584/1038304622026170418/y2mate.com_-_Excuses_AP_Dhillon_Gurinder_Gill_Intense.mp3" controls className='w-full bg-transparent my-4 mb-6 opacity-90 rounded-lg'></audio>
                 </div>
             </div>
             <div className='glassmorph w-9/12 rounded-lg my-4 py-6 mx-10 px-6'>
